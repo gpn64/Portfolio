@@ -72,7 +72,46 @@ An end-to-end tracking dashboard for pharmaceutical labeling translation workflo
 
 ---
 
-### 4. 📈 Momentum-Based Stock Picker — TFSA Portfolio
+### 4. 🏅 Dashboard — Olympic Games History (Sanofi-Wide Analytics Competition)
+
+**`Power BI · Data Storytelling · Competitive Analytics`**
+
+A comprehensive exploratory dashboard on the full history of the Olympic Games, built for a company-wide data visualization competition organized across all of Sanofi globally.
+
+**Result: Top 5 out of 80 teams of data professionals.**
+
+**Context:** The competition challenged participants to transform a rich historical dataset — athletes, nations, sports, medals, editions — into a compelling, insight-driven story. With 80 teams of analytics professionals from across the company competing, the bar was high on both analytical depth and visual design.
+
+**What it does:**
+- Provides a full historical panorama of the Games from Athens 1896 to the modern era, across both Summer and Winter editions
+- Explores medal distributions by country, sport, gender, and athlete — with time-series breakdowns showing the rise and fall of dominant nations
+- Surfaces non-obvious insights: host nation advantage, long-term shifts in sport representation, generational athlete performance arcs
+- Designed as a narrative experience, not just a data dump — each report page tells a specific story with supporting visuals
+
+**Why it placed:** The judges' feedback highlighted the balance between analytical rigor and storytelling clarity. Every chart earns its place; nothing is decorative. The dashboard works equally well as an executive summary and as an exploratory deep-dive.
+
+---
+
+### 5. 🎫 Ancillary Document Request & Ticketing System
+
+**`Power Apps · Power Automate · SharePoint · Regulatory Affairs domain`**
+
+A structured ticketing system enabling internal teams to formally request ancillary documents from a third-party contractor, as required under pharmaceutical regulatory frameworks.
+
+**Context:** Certain regulatory activities — particularly those involving contract manufacturing organizations (CMOs) or contract research organizations (CROs) — require formally documented exchanges of ancillary documents (e.g., certificates, specifications, batch records). Without a structured process, these requests were tracked via email threads, creating audit trail gaps and compliance risk.
+
+**What it does:**
+- Provides a structured intake form for submitting document requests, capturing: document type, associated product/submission, regulatory deadline, and priority level
+- Routes requests automatically to the appropriate contractor contact and internal owner via Power Automate
+- Tracks request status through a defined workflow: submitted → acknowledged → in progress → delivered → closed
+- Generates a complete audit trail of all exchanges, with timestamps and version history, meeting regulatory traceability requirements
+- Surfaces SLA compliance and open request aging in a summary dashboard
+
+**Why it matters:** Turns a compliance-critical process that lived in inboxes into a auditable, measurable, and manageable workflow — directly reducing regulatory risk and improving contractor relationship governance.
+
+---
+
+### 6. 📈 Momentum-Based Stock Picker — TFSA Portfolio
 
 **`Python · Pandas · yfinance · Quantitative Finance`**
 
@@ -91,6 +130,24 @@ A systematic stock selection tool built for a Canadian Tax-Free Savings Account 
 
 ---
 
+## Project Delivery
+
+Beyond the technical work, I operate as a full-cycle analytics project owner. Whether the project is a Power BI dashboard, a process automation, or a data pipeline, I drive it from first conversation to production:
+
+**Requirements & scoping** — translating ambiguous business problems into precise, deliverable analytics requirements; facilitating workshops with subject matter experts to surface what's actually needed (vs. what's initially asked for); writing functional specs that development and stakeholders can align on.
+
+**Design & development** — data modeling, report architecture, UX decisions, and iterative builds with regular stakeholder checkpoints. I default to building for the end user, not for the analyst.
+
+**Stakeholder management** — managing expectations across technical and non-technical audiences, from data engineers to C-suite sponsors; communicating progress, trade-offs, and delays clearly; keeping cross-functional teams aligned without over-meeting.
+
+**UAT & quality assurance** — structuring user acceptance testing with real users, capturing and triaging feedback, distinguishing scope from defect, and ensuring edge cases are covered before go-live.
+
+**Deployment & adoption** — managing rollout, training, and documentation; setting up governance for ongoing data quality and report maintenance; tracking post-launch adoption to close the loop on whether the solution is actually being used.
+
+This end-to-end ownership — not just the code, but the process around it — is what turns analytics deliverables into decisions.
+
+---
+
 ## Skills & Tools
 
 | Category | Tools |
@@ -100,13 +157,15 @@ A systematic stock selection tool built for a Canadian Tax-Free Savings Account 
 | **Programming** | Python (Pandas, NumPy, yfinance), regex |
 | **Automation** | Zapier, Power Automate, Airtable AI |
 | **AI/NLP** | Prompt engineering, GPT-4 via API, NLP (certified) |
+| **AI/NLP** | Prompt engineering, GPT-4 via API, NLP (certified) |
+| **Project delivery** | Requirements gathering, UAT, stakeholder management, deployment |
 | **Domain** | Pharmaceutical regulatory affairs, CMC, quality, supply chain |
 
 ---
 
 ## Background
 
-| | |
+| Degree | Location |
 |---|---|
 | **PharmD** | Université de Caen Basse-Normandie |
 | **MEng — Industrial Management & Supply Chain** | École Centrale Paris |
