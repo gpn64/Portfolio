@@ -19,7 +19,11 @@ This portfolio showcases personal and professional projects that reflect how I t
 
 ### 1. 🏥 GenAI Automation — Health Claim Database from Receipts
 
-**`Gmail · Zapier · Airtable AI · GPT-4 · Regex`**
+![Gmail](https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white)
+![Zapier](https://img.shields.io/badge/Zapier-FF4A00?style=for-the-badge&logo=zapier&logoColor=white)
+![Airtable](https://img.shields.io/badge/Airtable-18BFFF?style=for-the-badge&logo=airtable&logoColor=white)
+![OpenAI](https://img.shields.io/badge/GPT--4-412991?style=for-the-badge&logo=openai&logoColor=white)
+![Regex](https://img.shields.io/badge/Regex-4A4A4A?style=for-the-badge&logo=gnubash&logoColor=white)
 
 A fully automated pipeline that ingests healthcare invoices from Gmail, extracts structured fields using an LLM prompt, and builds a live reimbursement tracking database — with zero manual data entry on the intake side.
 
@@ -38,7 +42,10 @@ A fully automated pipeline that ingests healthcare invoices from Gmail, extracts
 
 ### 2. 📊 Dashboard — Regulatory SaaS Data Quality Control
 
-**`Power BI · SQL · Snowflake · RLS`**
+![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
+![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white)
+![Snowflake](https://img.shields.io/badge/Snowflake-29B5E8?style=for-the-badge&logo=snowflake&logoColor=white)
+![RLS](https://img.shields.io/badge/Row--Level%20Security-E8423F?style=for-the-badge&logo=microsoftazure&logoColor=white)
 
 A monitoring dashboard built to control data quality inside a cloud-based Regulatory Information Management System (RIMS) used across a global pharmaceutical company.
 
@@ -56,7 +63,10 @@ A monitoring dashboard built to control data quality inside a cloud-based Regula
 
 ### 3. 🌐 Dashboard — Labeling Translation Request & Tracking
 
-**`Power BI · SQL · Regulatory Affairs domain`**
+![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
+![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white)
+![Snowflake](https://img.shields.io/badge/Snowflake-29B5E8?style=for-the-badge&logo=snowflake&logoColor=white)
+![Pharma](https://img.shields.io/badge/Regulatory%20Affairs-00897B?style=for-the-badge&logo=bookstack&logoColor=white)
 
 An end-to-end tracking dashboard for pharmaceutical labeling translation workflows — from identifying translation needs to monitoring completion across global markets.
 
@@ -74,7 +84,10 @@ An end-to-end tracking dashboard for pharmaceutical labeling translation workflo
 
 ### 4. 🏅 Dashboard — Olympic Games History (Sanofi-Wide Analytics Competition)
 
-**`Power BI · Data Storytelling · Competitive Analytics`**
+![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Data Storytelling](https://img.shields.io/badge/Data%20Storytelling-FF6B6B?style=for-the-badge&logo=chartdotjs&logoColor=white)
+![Top 5](https://img.shields.io/badge/🏅%20Top%205%20%2F%2080%20Teams-FFD700?style=for-the-badge&logoColor=black)
 
 A comprehensive exploratory dashboard on the full history of the Olympic Games, built for a company-wide data visualization competition organized across all of Sanofi globally.
 
@@ -94,7 +107,10 @@ A comprehensive exploratory dashboard on the full history of the Olympic Games, 
 
 ### 5. 🎫 Ancillary Document Request & Ticketing System
 
-**`Power Apps · Power Automate · SharePoint · Regulatory Affairs domain`**
+![Power Apps](https://img.shields.io/badge/Power%20Apps-742774?style=for-the-badge&logo=powerapps&logoColor=white)
+![Power Automate](https://img.shields.io/badge/Power%20Automate-0066FF?style=for-the-badge&logo=powerautomate&logoColor=white)
+![SharePoint](https://img.shields.io/badge/SharePoint-0078D4?style=for-the-badge&logo=microsoftsharepoint&logoColor=white)
+![Pharma](https://img.shields.io/badge/Regulatory%20Affairs-00897B?style=for-the-badge&logo=bookstack&logoColor=white)
 
 A structured ticketing system enabling internal teams to formally request ancillary documents from a third-party contractor, as required under pharmaceutical regulatory frameworks.
 
@@ -107,13 +123,16 @@ A structured ticketing system enabling internal teams to formally request ancill
 - Generates a complete audit trail of all exchanges, with timestamps and version history, meeting regulatory traceability requirements
 - Surfaces SLA compliance and open request aging in a summary dashboard
 
-**Why it matters:** Turns a compliance-critical process that lived in inboxes into a auditable, measurable, and manageable workflow — directly reducing regulatory risk and improving contractor relationship governance.
+**Why it matters:** Turns a compliance-critical process that lived in inboxes into an auditable, measurable, and manageable workflow — directly reducing regulatory risk and improving contractor relationship governance.
 
 ---
 
 ### 6. 📈 Momentum-Based Stock Picker — TFSA Portfolio
 
-**`Python · Pandas · yfinance · Quantitative Finance`**
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
+![yfinance](https://img.shields.io/badge/yfinance-6B8E23?style=for-the-badge&logo=yahoo&logoColor=white)
+![Quant Finance](https://img.shields.io/badge/Quantitative%20Finance-1A237E?style=for-the-badge&logo=cashapp&logoColor=white)
 
 A systematic stock selection tool built for a Canadian Tax-Free Savings Account (TFSA), using price momentum as the core signal.
 
@@ -150,22 +169,23 @@ This end-to-end ownership — not just the code, but the process around it — i
 
 ## Skills & Tools
 
-| Category | Tools |
-|----------|-------|
-| **BI & Visualization** | Power BI (PL-300 certified), Airtable |
-| **Data Engineering** | Snowflake, SQL, dbt (basic) |
-| **Programming** | Python (Pandas, NumPy, yfinance), regex |
-| **Automation** | Zapier, Power Automate, Airtable AI |
-| **AI/NLP** | Prompt engineering, GPT-4 via API, NLP (certified) |
-| **AI/NLP** | Prompt engineering, GPT-4 via API, NLP (certified) |
-| **Project delivery** | Requirements gathering, UAT, stakeholder management, deployment |
-| **Domain** | Pharmaceutical regulatory affairs, CMC, quality, supply chain |
+![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
+![Snowflake](https://img.shields.io/badge/Snowflake-29B5E8?style=for-the-badge&logo=snowflake&logoColor=white)
+![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
+![Zapier](https://img.shields.io/badge/Zapier-FF4A00?style=for-the-badge&logo=zapier&logoColor=white)
+![Power Automate](https://img.shields.io/badge/Power%20Automate-0066FF?style=for-the-badge&logo=powerautomate&logoColor=white)
+![Power Apps](https://img.shields.io/badge/Power%20Apps-742774?style=for-the-badge&logo=powerapps&logoColor=white)
+![Airtable](https://img.shields.io/badge/Airtable-18BFFF?style=for-the-badge&logo=airtable&logoColor=white)
+![SharePoint](https://img.shields.io/badge/SharePoint-0078D4?style=for-the-badge&logo=microsoftsharepoint&logoColor=white)
+![OpenAI](https://img.shields.io/badge/GPT--4-412991?style=for-the-badge&logo=openai&logoColor=white)
 
 ---
 
 ## Background
 
-| Degree | Location |
+| | |
 |---|---|
 | **PharmD** | Université de Caen Basse-Normandie |
 | **MEng — Industrial Management & Supply Chain** | École Centrale Paris |
