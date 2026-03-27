@@ -202,4 +202,4 @@ Senior IC or team lead roles in **data analytics and business intelligence**, id
 
 ---
 
-📬 **guillaumepien@gmail.com** · [LinkedIn](https://www.linkedin.com/in/gpn)
+📬 **guillaume.pien@outlook.com** · [LinkedIn](https://www.linkedin.com/in/gpn)
