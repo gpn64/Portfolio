@@ -116,7 +116,7 @@ A Power BI dashboard exploring 120 years of Olympic history — built for a comp
 
 **What makes it stand out as a product:** The dashboard is structured as a guided narrative — each of the 4 analytical sections (Medal & Performance, Organizations & Participations, Sports & Athletes, Final Results) builds toward a conclusion the user reaches themselves. The answer to "who wins the Olympics" is genuinely theirs to decide.
 
-![Introduction](./screenshots/TOP0.PNG)
+![TOP Dashboard](./screenshots/TOP.gif)
 
 📁 [View full project README & report](https://github.com/gpn64/TOP-Dashboard-PowerBI/tree/main)
 
