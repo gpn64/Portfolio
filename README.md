@@ -118,7 +118,7 @@ A Power BI dashboard exploring 120 years of Olympic history — built for a comp
 
 ![Introduction](./screenshots/TOP0.PNG)
 
-📁 [View full project README & report]([https://github.com/gpn64/TOP-dashboard](https://github.com/gpn64/TOP-Dashboard-PowerBI))
+📁 [View full project README & report](https://github.com/gpn64/TOP-Dashboard-PowerBI/tree/main)
 
 ---
 
