@@ -97,26 +97,28 @@ An end-to-end tracking dashboard for pharmaceutical labeling translation workflo
 
 ---
 
-### 4. 🏅 Dashboard — Olympic Games History (Sanofi-Wide Analytics Competition)
+### 4. 🏅 True Olympic Powerhouse — Sanofi-Wide Analytics Competition
 
 ![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Data Storytelling](https://img.shields.io/badge/Data%20Storytelling-FF6B6B?style=for-the-badge&logo=chartdotjs&logoColor=white)
+![DAX](https://img.shields.io/badge/DAX-4A4A4A?style=for-the-badge&logo=microsoftexcel&logoColor=white)
+![Kaggle](https://img.shields.io/badge/Kaggle-20BEFF?style=for-the-badge&logo=kaggle&logoColor=white)
 ![Top 5](https://img.shields.io/badge/🏅%20Top%205%20%2F%2080%20Teams-FFD700?style=for-the-badge&logoColor=black)
 
-A comprehensive exploratory dashboard on the full history of the Olympic Games, built for a company-wide data visualization competition organized across all of Sanofi globally.
+A Power BI dashboard exploring 120 years of Olympic history — built for a company-wide analytics competition at Sanofi, open to all global teams. **Finished Top 5 out of 80 competing teams.**
 
-**Result: Top 5 out of 80 teams of data professionals.**
+**The central question:** The IOC does not officially rank countries. Yet every broadcaster publishes its own medal table, using different methods for different reasons. This dashboard makes that ambiguity the subject — letting users choose their own ranking methodology and discover who the *True Olympic Powerhouse* really is, depending on what they value.
 
-**Context:** The competition challenged participants to transform a rich historical dataset — athletes, nations, sports, medals, editions — into a compelling, insight-driven story. With 80 teams of analytics professionals from across the company competing, the bar was high on both analytical depth and visual design.
+**What makes it technically strong:**
+- Star schema data model with dedicated fact tables, parameter tables, and a 40+ measure DAX layer
+- Field parameters drive metric switching across 5 medal counting methodologies (Gold First, weighted counts, normalized by delegation size) — no page duplication, no bookmarks
+- Composite scoring on the Results page uses rank-based normalization so metrics with different scales (medal counts vs. number of Games organized) contribute proportionally
+- SVG flags rendered inline, personalized greetings via `USERPRINCIPALNAME()`, interactive sport icon grid as a slicer
 
-**What it does:**
-- Provides a full historical panorama of the Games from Athens 1896 to the modern era, across both Summer and Winter editions
-- Explores medal distributions by country, sport, gender, and athlete — with time-series breakdowns showing the rise and fall of dominant nations
-- Surfaces non-obvious insights: host nation advantage, long-term shifts in sport representation, generational athlete performance arcs
-- Designed as a narrative experience, not just a data dump — each report page tells a specific story with supporting visuals
+**What makes it stand out as a product:** The dashboard is structured as a guided narrative — each of the 4 analytical sections (Medal & Performance, Organizations & Participations, Sports & Athletes, Final Results) builds toward a conclusion the user reaches themselves. The answer to "who wins the Olympics" is genuinely theirs to decide.
 
-**Why it placed:** The judges' feedback highlighted the balance between analytical rigor and storytelling clarity. Every chart earns its place; nothing is decorative. The dashboard works equally well as an executive summary and as an exploratory deep-dive.
+![Introduction](./screenshots/TOP0.PNG)
+
+📁 [View full project README & report]([https://github.com/gpn64/TOP-dashboard](https://github.com/gpn64/TOP-Dashboard-PowerBI))
 
 ---
 
