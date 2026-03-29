@@ -1,6 +1,6 @@
 # Guillaume Pien — Data & Analytics Portfolio
 
-**PharmD · Data Analytics · Business Intelligence · Automation**  
+**Data Analytics · Business Intelligence · Automation · AI**  
 📍 Greater Ottawa Metropolitan Area · [LinkedIn](https://www.linkedin.com/in/gpn)
 
 ![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
@@ -13,7 +13,6 @@
 ![Zapier](https://img.shields.io/badge/Zapier-FF4A00?style=for-the-badge&logo=zapier&logoColor=white)
 ![Power Automate](https://img.shields.io/badge/Power%20Automate-0066FF?style=for-the-badge&logo=powerautomate&logoColor=white)
 ![Power Apps](https://img.shields.io/badge/Power%20Apps-742774?style=for-the-badge&logo=powerapps&logoColor=white)
-![Machine Learning](https://img.shields.io/badge/Machine%20Learning-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
 ![OpenAI](https://img.shields.io/badge/GPT--4-412991?style=for-the-badge&logo=openai&logoColor=white)
 ![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)
 ![Data Visualization](https://img.shields.io/badge/Data%20Visualization-E84393?style=for-the-badge&logo=googleanalytics&logoColor=white)
@@ -23,84 +22,35 @@
 
 ## About
 
-I'm a pharmacist and data professional with 10+ years in the pharmaceutical industry. My edge is at the intersection of deep domain expertise and technical analytics: I understand the regulatory, quality, and manufacturing context behind the data — which means I ask the right questions, build relevant models, and deliver insights that actually change decisions.
+## About
 
-My toolbox spans **Snowflake, Power BI** (PL-300 certified), **SQL, Python, and automation platforms**. I'm particularly drawn to projects that reduce manual toil, surface hidden patterns in messy operational data, and give leadership teams a clearer picture of what's actually happening.
+I'm a PharmD and data professional with 10+ years of experience in the 
+pharmaceutical industry, turning complex operational data into decisions that 
+actually get made. I work across the full analytics stack — from data modeling 
+and SQL to Power BI dashboards, Python pipelines, and AI-powered automation — 
+with a consistent focus on building things that are actually used, not just built.
 
-This portfolio showcases personal and professional projects that reflect how I think about data problems.
+My background combines deep pharmaceutical domain knowledge with hands-on 
+technical expertise. That combination means I spend less time learning the 
+business context and more time solving the right problems — whether that's 
+a KPI framework for a leadership team, a data quality monitoring system, or 
+an AI-powered automation pipeline.
 
+What drives my work is a strong belief that analytics tools are only as good 
+as the experience of using them. I invest heavily in UX — report layout, 
+navigation flow, the right level of detail at the right level of the 
+organisation — because a dashboard that people actually open every morning 
+is worth ten technically perfect reports that nobody reads. Good data products 
+earn their place in someone's workflow; they don't need to be explained.
 
 ---
 
 ## Projects
 
-### 1. 🏥 Healthcare AutoClaims — AI-Powered Health Receipt Tracker
-
-![Zapier](https://img.shields.io/badge/Zapier-FF4A00?style=for-the-badge&logo=zapier&logoColor=white)
-![Airtable](https://img.shields.io/badge/Airtable-18BFFF?style=for-the-badge&logo=airtable&logoColor=white)
-![OpenAI](https://img.shields.io/badge/GPT--4.1%20mini-412991?style=for-the-badge&logo=openai&logoColor=white)
-![Regex](https://img.shields.io/badge/Regex-4A4A4A?style=for-the-badge&logo=gnubash&logoColor=white)
-
-A fully automated pipeline that watches a Gmail inbox for healthcare receipts, extracts structured data from PDF invoices using GPT-4.1 mini, and builds a live reimbursement tracking database — with zero manual data entry on the intake side.
-
-**What it does:**
-- Gmail auto-tags incoming provider emails with a `healthcare` label; Zapier fires on each match, capturing the email link and PDF attachment into Airtable
-- An AI Assist column runs a constrained GPT-4.1 mini prompt against each invoice, extracting: clinic name, patient name, care type, appointment date, practitioner, duration, and amount billed
-- Regex formula columns parse each field out of the AI output into clean, queryable cells
-- A `type_of_service` formula normalizes raw care descriptions into insurance categories (Paramedical, Dental, Optical, Mental Health) — ready for claim submission without manual interpretation
-- Four manual columns close the loop: claim ID, reimbursement amount, total refund, and % reimbursed
-
-**Why it's interesting:** The prompt is deliberately constrained to a fixed `key: value` format, making downstream regex extraction deterministic and robust. The raw AI output is always preserved — if the prompt or a formula needs updating, no re-running the Zap. A clean example of designing for maintainability in a no-code stack, with real domain logic baked into the formula layer.
-
-📁 [View project README](https://github.com/gpn64/healthcare-autoclaims)
-
----
-
-### 2. 📊 Dashboard — Regulatory SaaS Data Quality Control
+### 1. 🏅 True Olympic Powerhouse — Sanofi-Wide Analytics Competition
 
 ![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
-![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white)
-![Snowflake](https://img.shields.io/badge/Snowflake-29B5E8?style=for-the-badge&logo=snowflake&logoColor=white)
-![RLS](https://img.shields.io/badge/Row--Level%20Security-E8423F?style=for-the-badge&logo=microsoftazure&logoColor=white)
-
-A monitoring dashboard built to control data quality inside a cloud-based Regulatory Information Management System (RIMS) used across a global pharmaceutical company.
-
-**Context:** Regulatory data in large pharma is notoriously fragmented — product records, submission timelines, document statuses, and health authority interactions all live in different modules and get updated by distributed teams across dozens of markets. Quality gaps directly affect compliance reporting and regulatory strategy.
-
-**What it does:**
-- Tracks completeness, consistency, and timeliness of key regulatory records across global markets
-- Flags outliers and missing mandatory fields at the product, market, and submission level
-- Provides drill-through capability from executive summary to individual record
-- Row-level security ensures market teams see only their own data while global teams have full visibility
-
-**Impact:** Contributed to achieving 75%+ compliance for priority document categories through targeted data remediation campaigns driven by dashboard findings.
-
----
-
-### 3. 🌐 Dashboard — Labeling Translation Request & Tracking
-
-![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
-![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white)
-![Snowflake](https://img.shields.io/badge/Snowflake-29B5E8?style=for-the-badge&logo=snowflake&logoColor=white)
-![Pharma](https://img.shields.io/badge/Regulatory%20Affairs-00897B?style=for-the-badge&logo=bookstack&logoColor=white)
-
-An end-to-end tracking dashboard for pharmaceutical labeling translation workflows — from identifying translation needs to monitoring completion across global markets.
-
-**Context:** Labeling documents (SmPC, PIL, packaging) must be translated and approved for every market where a product is sold. With hundreds of products and dozens of languages, translation bottlenecks can delay launches and trigger compliance issues. Visibility into this pipeline is typically poor.
-
-**What it does:**
-- Maps outstanding translation needs by product, document type, and target market
-- Tracks translation progress through workflow stages: requested → in translation → under review → approved
-- Surfaces aging requests and identifies recurring bottlenecks by language pair or document type
-- Supports capacity planning for translation vendors and internal review teams
-
-**Why it matters:** Transforms a chaotic email-and-spreadsheet process into a single source of truth for regulatory operations leadership.
-
----
-
-### 4. 🏅 True Olympic Powerhouse — Sanofi-Wide Analytics Competition
-
-![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
+![DAX](https://img.shields.io/badge/DAX-4A4A4A?style=for-the-badge&logo=microsoftexcel&logoColor=white)
 ![Storytelling](https://img.shields.io/badge/Data%20Storytelling-FF6B6B?style=for-the-badge&logo=chartdotjs&logoColor=white)
 ![Data Visualization](https://img.shields.io/badge/Data%20Visualization-E84393?style=for-the-badge&logo=googleanalytics&logoColor=white)
 ![Kaggle](https://img.shields.io/badge/Kaggle-20BEFF?style=for-the-badge&logo=kaggle&logoColor=white)
@@ -124,29 +74,30 @@ A Power BI dashboard exploring 120 years of Olympic history — built for a comp
 
 ---
 
-### 5. 🎫 Ancillary Document Request & Ticketing System
+### 2. 🏥 Healthcare AutoClaims — AI-Powered Receipt Tracker
 
-![Power Apps](https://img.shields.io/badge/Power%20Apps-742774?style=for-the-badge&logo=powerapps&logoColor=white)
-![Power Automate](https://img.shields.io/badge/Power%20Automate-0066FF?style=for-the-badge&logo=powerautomate&logoColor=white)
-![SharePoint](https://img.shields.io/badge/SharePoint-0078D4?style=for-the-badge&logo=microsoftsharepoint&logoColor=white)
-![Pharma](https://img.shields.io/badge/Regulatory%20Affairs-00897B?style=for-the-badge&logo=bookstack&logoColor=white)
+![Gmail](https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white)
+![Zapier](https://img.shields.io/badge/Zapier-FF4A00?style=for-the-badge&logo=zapier&logoColor=white)
+![Airtable](https://img.shields.io/badge/Airtable-18BFFF?style=for-the-badge&logo=airtable&logoColor=white)
+![OpenAI](https://img.shields.io/badge/GPT--4.1%20mini-412991?style=for-the-badge&logo=openai&logoColor=white)
+![Regex](https://img.shields.io/badge/Regex-4A4A4A?style=for-the-badge&logo=gnubash&logoColor=white)
 
-A structured ticketing system enabling internal teams to formally request ancillary documents from a third-party contractor, as required under pharmaceutical regulatory frameworks.
-
-**Context:** Certain regulatory activities — particularly those involving contract manufacturing organizations (CMOs) or contract research organizations (CROs) — require formally documented exchanges of ancillary documents (e.g., certificates, specifications, batch records). Without a structured process, these requests were tracked via email threads, creating audit trail gaps and compliance risk.
+A fully automated pipeline that watches a Gmail inbox for healthcare receipts, extracts structured data from PDF invoices using GPT-4.1 mini, and builds a live reimbursement tracking database — with zero manual data entry on the intake side.
 
 **What it does:**
-- Provides a structured intake form for submitting document requests, capturing: document type, associated product/submission, regulatory deadline, and priority level
-- Routes requests automatically to the appropriate contractor contact and internal owner via Power Automate
-- Tracks request status through a defined workflow: submitted → acknowledged → in progress → delivered → closed
-- Generates a complete audit trail of all exchanges, with timestamps and version history, meeting regulatory traceability requirements
-- Surfaces SLA compliance and open request aging in a summary dashboard
+- Gmail auto-tags incoming provider emails with a `healthcare` label; Zapier fires on each match, capturing the email link and PDF attachment into Airtable
+- An AI Assist column runs a constrained GPT-4.1 mini prompt against each invoice, extracting: clinic name, patient name, care type, appointment date, practitioner, duration, and amount billed
+- Regex formula columns parse each field out of the AI output into clean, queryable cells
+- A `type_of_service` formula normalizes raw care descriptions into insurance categories (Paramedical, Dental, Optical, Mental Health) — ready for claim submission without manual interpretation
+- Four manual columns close the loop: claim ID, reimbursement amount, total refund, and % reimbursed
 
-**Why it matters:** Turns a compliance-critical process that lived in inboxes into an auditable, measurable, and manageable workflow — directly reducing regulatory risk and improving contractor relationship governance.
+**Why it's interesting:** The prompt is deliberately constrained to a fixed `key: value` format, making downstream regex extraction deterministic and robust. The raw AI output is always preserved — if the prompt or a formula needs updating, no re-running the Zap. A clean example of designing for maintainability in a no-code stack, with real domain logic baked into the formula layer.
+
+📁 [View project README](https://github.com/gpn64/healthcare-autoclaims)
 
 ---
 
-### 6. 📈 Momentum-Based Stock Picker — TFSA Portfolio
+### 3. 📈 Momentum-Based Stock Picker — TFSA Portfolio
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
@@ -168,6 +119,68 @@ A systematic stock selection tool built for a Canadian Tax-Free Savings Account 
 
 ---
 
+### 4. 📊 Dashboard — Data Quality Monitoring at Scale
+
+![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
+![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white)
+![Snowflake](https://img.shields.io/badge/Snowflake-29B5E8?style=for-the-badge&logo=snowflake&logoColor=white)
+![RLS](https://img.shields.io/badge/Row--Level%20Security-E8423F?style=for-the-badge&logo=microsoftazure&logoColor=white)
+
+A monitoring dashboard built to control data quality inside a cloud-based SaaS platform used by a global organisation across dozens of markets and hundreds of users.
+
+**Context:** In large, distributed organisations, data entered by many teams across many markets quickly becomes inconsistent — missing fields, outdated records, conflicting values. Without visibility into data health, reporting becomes unreliable and operational decisions are made on faulty foundations. This dashboard was built to surface those gaps and drive remediation at scale.
+
+**What it does:**
+- Tracks completeness, consistency, and timeliness of key records across markets and business units
+- Flags outliers and missing mandatory fields at multiple levels of granularity — from executive summary to individual record drill-through
+- Row-level security ensures local teams see only their own data while global teams retain full visibility
+- Feeds directly into targeted remediation campaigns, with measurable progress tracked over time
+
+**Impact:** Contributed to achieving 75%+ compliance for priority data categories — a measurable improvement driven by dashboard findings, not manual audits.
+
+---
+
+### 5. 🌐 Dashboard — Multi-Market Deliverable Tracking
+
+![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
+![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white)
+![Snowflake](https://img.shields.io/badge/Snowflake-29B5E8?style=for-the-badge&logo=snowflake&logoColor=white)
+
+An end-to-end pipeline tracking dashboard — from identifying outstanding deliverables to monitoring completion progress across a global network of markets and external vendors.
+
+**Context:** In any organisation operating across dozens of markets with external partners, tracking the status of deliverables through email threads and spreadsheets creates blind spots. Bottlenecks go unnoticed, deadlines slip, and capacity planning is reactive. This dashboard was built to replace that chaos with a single source of truth.
+
+**What it does:**
+- Maps outstanding deliverables by type, market, and responsible party
+- Tracks progress through defined workflow stages: requested → in progress → under review → completed
+- Surfaces aging requests and recurring bottlenecks by partner or deliverable type
+- Supports capacity planning for vendors and internal review teams
+
+**Why it matters:** Turns a pipeline that lived in inboxes into a measurable, manageable workflow visible to all stakeholders — from operational teams to leadership.
+
+---
+
+### 6. 🎫 Contractor Request & Ticketing System
+
+![Power Apps](https://img.shields.io/badge/Power%20Apps-742774?style=for-the-badge&logo=powerapps&logoColor=white)
+![Power Automate](https://img.shields.io/badge/Power%20Automate-0066FF?style=for-the-badge&logo=powerautomate&logoColor=white)
+![SharePoint](https://img.shields.io/badge/SharePoint-0078D4?style=for-the-badge&logo=microsoftsharepoint&logoColor=white)
+
+A structured ticketing system enabling internal teams to formally request documents from third-party contractors — replacing an ad hoc email-based process with an auditable, trackable workflow.
+
+**Context:** Document exchanges with external contractors are often compliance-critical but poorly tracked — requests sent by email, no status visibility, no audit trail. This system was built to bring structure and traceability to a process that previously lived entirely in inboxes.
+
+**What it does:**
+- Structured intake form captures: document type, associated project, deadline, and priority level
+- Routes requests automatically to the appropriate contractor and internal owner via Power Automate
+- Tracks status through a defined workflow: submitted → acknowledged → in progress → delivered → closed
+- Generates a complete audit trail with timestamps and version history
+- Summary dashboard surfaces SLA compliance and open request aging
+
+**Why it matters:** Turns a compliance-critical process into an auditable, measurable workflow — reducing risk and giving management real visibility into contractor responsiveness.
+
+---
+
 ## Project Delivery
 
 Beyond the technical work, I operate as a full-cycle analytics project owner. Whether the project is a Power BI dashboard, a process automation, or a data pipeline, I drive it from first conversation to production:
@@ -183,25 +196,6 @@ Beyond the technical work, I operate as a full-cycle analytics project owner. Wh
 **Deployment & adoption** — managing rollout, training, and documentation; setting up governance for ongoing data quality and report maintenance; tracking post-launch adoption to close the loop on whether the solution is actually being used.
 
 This end-to-end ownership — not just the code, but the process around it — is what turns analytics deliverables into decisions.
-
----
-
-## Background
-
-| | |
-|---|---|
-| **PharmD** | Université de Caen Basse-Normandie |
-| **MEng — Industrial Management & Supply Chain** | École Centrale Paris |
-| **MBA** | IAE Caen |
-| **MS — Drug Design & Medicinal Chemistry** | Université de Caen Basse-Normandie |
-
-**Certifications:** PL-300 Power BI Data Analyst · NLP (Natural Language Processing) · CPIM Basics of Supply Chain · Data Analyst Professional Certificate
-
----
-
-## What I'm Looking For
-
-Senior IC or team lead roles in **data analytics and business intelligence**, ideally in regulated industries (pharma, biotech, health) or environments where domain complexity adds real value to the analytics function. I'm most effective when I can own problems end-to-end — from business question to deployed solution — and work closely with cross-functional stakeholders who care about getting decisions right.
 
 ---
 
