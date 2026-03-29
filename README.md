@@ -34,26 +34,25 @@ This portfolio showcases personal and professional projects that reflect how I t
 
 ## Projects
 
-### 1. 🏥 GenAI Automation — Health Claim Database from Receipts
+### 1. 🏥 Healthcare AutoClaims — AI-Powered Health Receipt Tracker
 
-![Gmail](https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white)
 ![Zapier](https://img.shields.io/badge/Zapier-FF4A00?style=for-the-badge&logo=zapier&logoColor=white)
 ![Airtable](https://img.shields.io/badge/Airtable-18BFFF?style=for-the-badge&logo=airtable&logoColor=white)
-![OpenAI](https://img.shields.io/badge/GPT--4-412991?style=for-the-badge&logo=openai&logoColor=white)
+![OpenAI](https://img.shields.io/badge/GPT--4.1%20mini-412991?style=for-the-badge&logo=openai&logoColor=white)
 ![Regex](https://img.shields.io/badge/Regex-4A4A4A?style=for-the-badge&logo=gnubash&logoColor=white)
 
-A fully automated pipeline that ingests healthcare invoices from Gmail, extracts structured fields using an LLM prompt, and builds a live reimbursement tracking database — with zero manual data entry on the intake side.
+A fully automated pipeline that watches a Gmail inbox for healthcare receipts, extracts structured data from PDF invoices using GPT-4.1 mini, and builds a live reimbursement tracking database — with zero manual data entry on the intake side.
 
 **What it does:**
-- Gmail label-based filter routes provider emails to a Zapier automation
-- Zapier captures email links and PDF attachments, creates Airtable records
-- An Airtable AI field runs a structured GPT-4 prompt against each invoice, extracting: clinic name, patient name, care type, appointment date, practitioner, duration, and amount billed
-- Regex formula columns parse the AI output into individual structured fields
-- Two manual columns close the loop: insurer reimbursement amount and claim reference ID
+- Gmail auto-tags incoming provider emails with a `healthcare` label; Zapier fires on each match, capturing the email link and PDF attachment into Airtable
+- An AI Assist column runs a constrained GPT-4.1 mini prompt against each invoice, extracting: clinic name, patient name, care type, appointment date, practitioner, duration, and amount billed
+- Regex formula columns parse each field out of the AI output into clean, queryable cells
+- A `type_of_service` formula normalizes raw care descriptions into insurance categories (Paramedical, Dental, Optical, Mental Health) — ready for claim submission without manual interpretation
+- Four manual columns close the loop: claim ID, reimbursement amount, total refund, and % reimbursed
 
-**Why it's interesting:** The prompt is deliberately constrained to produce a fixed-label output format, which makes downstream regex extraction deterministic. The raw AI output is always preserved, so formulas can be updated without re-running the automation. A clean example of designing for maintainability in a no-code stack.
+**Why it's interesting:** The prompt is deliberately constrained to a fixed `key: value` format, making downstream regex extraction deterministic and robust. The raw AI output is always preserved — if the prompt or a formula needs updating, no re-running the Zap. A clean example of designing for maintainability in a no-code stack, with real domain logic baked into the formula layer.
 
-📁 [View project README](./genai-health-claims/README.md)
+📁 [View project README](https://github.com/gpn64/healthcare-autoclaims)
 
 ---
 
