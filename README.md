@@ -97,25 +97,26 @@ A fully automated pipeline that watches a Gmail inbox for healthcare receipts, e
 
 ---
 
-### 3. 📈 Momentum-Based Stock Picker — TFSA Portfolio
+### 3. 📈 TFSA Stock Screener
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
 ![yfinance](https://img.shields.io/badge/yfinance-6B8E23?style=for-the-badge&logo=yahoo&logoColor=white)
 ![Quant Finance](https://img.shields.io/badge/Quantitative%20Finance-1A237E?style=for-the-badge&logo=cashapp&logoColor=white)
 
-A systematic stock selection tool built for a Canadian Tax-Free Savings Account (TFSA), using price momentum as the core signal.
+A Python screener that generates a quarterly TSX rebalancing recommendation for a TFSA — 15 primary positions + 4 backups, all in CAD, combining momentum signals with fundamental quality filters.
 
-**The idea:** Momentum investing — buying assets that have outperformed recently and selling laggards — is one of the most robust and replicated anomalies in empirical finance. This project operationalizes it for a self-managed retail portfolio with Canadian tax constraints in mind.
+**The idea:** Momentum investing — buying assets that have recently outperformed and trimming laggards — is one of the most replicated anomalies in empirical finance. This screener operationalizes it for a self-managed TSX portfolio, with a fundamental scoring gate to avoid chasing deteriorating businesses.
 
-**What it does:**
-- Pulls historical price data for a defined stock universe via `yfinance`
-- Calculates momentum scores using trailing returns over multiple lookback windows (e.g., 12-1 month, adjustable)
-- Ranks and filters candidates based on momentum rank, with optional volatility adjustment
-- Outputs a ranked watchlist and suggested rebalancing actions based on current holdings
-- Designed around TFSA rules: contribution room tracking, no foreign income tax implications for eligible holdings
+**How the pipeline works:**
+- **Coarse filter** — eliminates illiquid names below $5 CAD or $500K daily dollar volume (thresholds calibrated for TSX liquidity)
+- **Fundamental scoring** — composite score across ROE, profit margins, revenue growth, P/E, dividend yield, and sector tilt; top 80 pass forward
+- **Momentum scoring** — combined 90d × 0.7 + 30d × 0.3 signal applied to the fundamental survivors
+- **Portfolio construction** — top 15 equal-weighted as primary positions; next 4 as labeled backups
 
-**Design choices:** Lookback windows and universe filters are configurable. The tool is intentionally simple — no overfitting to historical data, no black-box ML. The signal is transparent and the logic is auditable.
+**Design choices:** TSX-only scope eliminates currency risk and ensures full TFSA eligibility on all positions. The fundamental gate runs before momentum — not after — to avoid selecting names accelerating into deteriorating financials. A historical simulation mode lets you pass any past date to reconstruct what the screener would have recommended on that day.
+
+📁 [View full project README](https://github.com/gpn64/TFSA_Screener-V1)
 
 ---
 
