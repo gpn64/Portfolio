@@ -3,6 +3,7 @@
 **Data Analytics · Business Intelligence · Automation · AI**  
 📍 Greater Ottawa Metropolitan Area · [LinkedIn](https://www.linkedin.com/in/gpn)
 
+![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)
 ![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
 ![Snowflake](https://img.shields.io/badge/Snowflake-29B5E8?style=for-the-badge&logo=snowflake&logoColor=white)
 ![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white)
@@ -14,7 +15,6 @@
 ![OpenAI](https://img.shields.io/badge/GPT--4-412991?style=for-the-badge&logo=openai&logoColor=white)
 ![Data Visualization](https://img.shields.io/badge/Data%20Visualization-E84393?style=for-the-badge&logo=googleanalytics&logoColor=white)
 ![Storytelling](https://img.shields.io/badge/Data%20Storytelling-FF6B6B?style=for-the-badge&logo=chartdotjs&logoColor=white)
-![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)
 
 ---
 
@@ -43,13 +43,72 @@ earn their place in someone's workflow; they don't need to be explained.
 
 ## Projects
 
-### 1. 🏅 True Olympic Powerhouse — Sanofi-Wide Analytics Competition
+### 1. 💊 Pharma Sales Performance Dashboard
 
 ![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
 ![DAX](https://img.shields.io/badge/DAX-4A4A4A?style=for-the-badge&logo=microsoftexcel&logoColor=white)
 ![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)
+![Kaggle](https://img.shields.io/badge/Kaggle-20BEFF?style=for-the-badge&logo=kaggle&logoColor=white)
+
+A Power BI commercial performance dashboard built on a real pharmaceutical sales dataset (Poland & Germany, 2017–2020, 254K transactions) — designed to give sales leadership and territory managers a clear, actionable view of what's happening in the field.
+
+**What it answers:**
+- Where are sales growing and where are they declining — by country, territory, and product class?
+- Which channel and sub-channel (Hospital vs. Pharmacy, Private vs. Retail vs. Institution vs. Government) drives the most value, and is that mix shifting?
+- Which sales reps and teams are outperforming — and which are lagging behind their peers?
+- How is the product mix evolving across therapeutic classes (Antibiotics, Analgesics, Mood Stabilizers, Antiseptics, Antipyretics, Antimalarial)?
+
+**Dashboard structure — 5 pages:**
+
+| Page | Focus |
+|------|-------|
+| **Executive Overview** | Global KPIs: total sales, volume, price/unit, YoY growth by country and year |
+| **Territory Performance** | City-level map, territory ranking, Poland vs. Germany comparison |
+| **Product Mix** | Sales by therapeutic class and product, mix evolution over time |
+| **Channel Analysis** | Hospital vs. Pharmacy breakdown, sub-channel contribution |
+| **Rep & Team Performance** | Individual and team ranking vs. average, performance distribution |
+
+**Design approach:** Wireframed in Figma before development — report layout, navigation flow, and level of detail were defined upfront to ensure the dashboard serves field users as much as leadership. Every page answers one question; no page tries to answer all of them.
+
+📁 [View full project README](https://github.com/gpn64/pharma-sales-dashboard)
+
+---
+
+### 2. 🔬 Pharma Sales Advanced Analytics — Segmentation & Forecast
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white)
+![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
+![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)
+![Kaggle](https://img.shields.io/badge/Kaggle-20BEFF?style=for-the-badge&logo=kaggle&logoColor=white)
+
+A Python-based analytics layer built on top of the same pharma sales dataset — going beyond what standard BI reporting can answer. Three analytical modules, each producing outputs that feed back into Power BI for decision-making.
+
+**This project is a deliberate extension of Project 1** — it answers the questions that arise once you have a solid reporting foundation in place: not just *what* is happening, but *why*, *who*, and *what next*.
+
+**Module 1 — Customer Segmentation**
+RFM analysis (Recency, Frequency, Monetary) combined with K-Means clustering to group customers into behaviorally distinct segments. Each segment is profiled by channel, sub-channel, and preferred product class — producing actionable inputs for differentiated commercial strategies (key account management, frequency of visits, product focus by customer type).
+
+**Module 2 — Territory Underperformance Analysis**
+Separates *performance* from *potential* at the territory level — identifying whether a city underperforms because it is poorly covered or because market demand is structurally lower. Outputs a performance vs. potential scatter plot and a choropleth map that makes underserved opportunities immediately visible.
+
+**Module 3 — Sales Forecast**
+Time-series forecast by therapeutic class using Prophet — monthly point estimates with confidence intervals. Designed to support quarterly target-setting and resource allocation planning.
+
+**Python → Power BI handoff:** Segment labels, territory scores, and forecast outputs are exported from Python notebooks as clean tables and loaded into Power BI — keeping analytical logic in code and the decision layer in the dashboard.
+
+📁 [View full project README](https://github.com/gpn64/pharma-sales-analytics)
+
+---
+
+### 3. 🏅 True Olympic Powerhouse — Sanofi-Wide Analytics Competition
+
+![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
+![DAX](https://img.shields.io/badge/DAX-4A4A4A?style=for-the-badge&logo=microsoftexcel&logoColor=white)
 ![Storytelling](https://img.shields.io/badge/Data%20Storytelling-FF6B6B?style=for-the-badge&logo=chartdotjs&logoColor=white)
 ![Data Visualization](https://img.shields.io/badge/Data%20Visualization-E84393?style=for-the-badge&logo=googleanalytics&logoColor=white)
+![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)
 ![Kaggle](https://img.shields.io/badge/Kaggle-20BEFF?style=for-the-badge&logo=kaggle&logoColor=white)
 ![Top 5](https://img.shields.io/badge/🏅%20Top%205%20%2F%2080%20Teams-FFD700?style=for-the-badge&logoColor=black)
 
@@ -71,35 +130,7 @@ A Power BI dashboard exploring 120 years of Olympic history — built for a comp
 
 ---
 
-### 2. 💊 Pharma Sales Analytics — Segmentation, Territory Performance & Forecast
-
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
-![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white)
-![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
-![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)
-![Kaggle](https://img.shields.io/badge/Kaggle-20BEFF?style=for-the-badge&logo=kaggle&logoColor=white)
-
-An end-to-end commercial analytics project on a real pharmaceutical sales dataset (Poland & Germany, 2017–2020, 254K transactions) — combining Python-based data science with a Power BI decision-support dashboard. Built to answer the questions a Sales or Marketing manager actually asks.
-
-**Three analytical questions, one project:**
-
-**1. Who are my customers and how should I treat them differently?**
-RFM-based customer segmentation using K-Means clustering — grouping customers by recency, purchase frequency, and revenue contribution. Each segment is profiled by channel (Hospital vs. Pharmacy), sub-channel (Private, Retail, Institution, Government), and product class to support differentiated commercial strategies.
-
-**2. Where are my underperforming territories — and is it a people problem or a potential problem?**
-Territory performance analysis that separates actual sales performance from market potential — identifying whether a territory underperforms because it is poorly covered or because the demand simply isn't there. Visualized as a performance vs. potential scatter plot and a choropleth map at city level.
-
-**3. Where will my sales be next quarter?**
-Time-series sales forecast by product class using Prophet — producing point estimates and confidence intervals at the monthly level, exportable for planning and target-setting.
-
-**Python → Power BI handoff:** Segment labels, territory scores, and forecast outputs are exported from the Python notebooks and loaded into Power BI as enriched tables, keeping the analytical logic in code and the decision layer in the dashboard.
-
-📁 [View full project README](https://github.com/gpn64/pharma-sales-analytics)
-
----
-
-### 3. 🏥 Healthcare AutoClaims — AI-Powered Receipt Tracker
+### 4. 🏥 Healthcare AutoClaims — AI-Powered Receipt Tracker
 
 ![Gmail](https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white)
 ![Zapier](https://img.shields.io/badge/Zapier-FF4A00?style=for-the-badge&logo=zapier&logoColor=white)
@@ -122,7 +153,7 @@ A fully automated pipeline that watches a Gmail inbox for healthcare receipts, e
 
 ---
 
-### 4. 📈 TFSA TSX Momentum Screener — Quarterly Rebalancing Tool
+### 5. 📈 TFSA TSX Momentum Screener — Quarterly Rebalancing Tool
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
@@ -145,7 +176,7 @@ A Python screener that generates a quarterly TSX rebalancing recommendation for 
 
 ---
 
-### 5. 📊 Dashboard — Data Quality Monitoring at Scale
+### 6. 📊 Dashboard — Data Quality Monitoring at Scale
 
 ![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
 ![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white)
