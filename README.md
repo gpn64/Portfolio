@@ -74,7 +74,7 @@ A Power BI commercial performance dashboard built on a real pharmaceutical sales
 
 ---
 
-### 2. 🔬 Pharma Sales Advanced Analytics — Segmentation & Forecast
+### 2. 🔬 Cortonis Pharma Sales Advanced Analytics — Segmentation & Forecast
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
