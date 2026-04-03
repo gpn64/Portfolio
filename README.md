@@ -44,12 +44,11 @@ earn their place in someone's workflow; they don't need to be explained.
 
 ## Projects
 
-### 1. 💊 Pharma Sales Performance Dashboard
+### 1. 💊 Cortonis Pharma Sales Performance Dashboard
 
 ![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
 ![DAX](https://img.shields.io/badge/DAX-4A4A4A?style=for-the-badge&logo=microsoftexcel&logoColor=white)
 ![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)
-![Kaggle](https://img.shields.io/badge/Kaggle-20BEFF?style=for-the-badge&logo=kaggle&logoColor=white)
 
 A Power BI commercial performance dashboard built on a real pharmaceutical sales dataset (Poland & Germany, 2017–2020, 254K transactions) — designed to give sales leadership and territory managers a clear, actionable view of what's happening in the field.
 
@@ -71,7 +70,7 @@ A Power BI commercial performance dashboard built on a real pharmaceutical sales
 
 **Design approach:** Wireframed in Figma before development — report layout, navigation flow, and level of detail were defined upfront to ensure the dashboard serves field users as much as leadership. Every page answers one question; no page tries to answer all of them.
 
-📁 [View full project README](https://github.com/gpn64/pharma-sales-dashboard)
+📁 [View full project README](https://github.com/gpn64/Cortonis-Pharma-Sales-Dashboard)
 
 ---
 
