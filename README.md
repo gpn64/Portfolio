@@ -22,13 +22,13 @@
 
 I'm a PharmD and data professional with 10+ years of experience in the
 pharmaceutical industry, turning complex operational data into decisions that
-actually get made. I work across the full analytics stack — from data modeling
-and SQL to Power BI dashboards, Python pipelines, and AI-powered automation —
+actually get made. I work across the full analytics stack: from data modeling
+and SQL to Power BI dashboards, Python pipelines, and AI-powered automation
 with a consistent focus on building things that are actually used, not just built.
 
 My background combines 10 years of pharmaceutical domain knowledge with hands-on
 technical expertise. That combination means I spend less time learning the
-business context and more time solving the right problems — whether that's
+business context and more time solving the right problems, whether that's
 a KPI framework for a leadership team, a data quality monitoring system, or
 an AI-powered automation pipeline.
 
