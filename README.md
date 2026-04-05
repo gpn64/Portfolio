@@ -50,7 +50,7 @@ earn their place in someone's workflow; they don't need to be explained.
 ![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)
 ![Data Visualization](https://img.shields.io/badge/Data%20Visualization-E84393?style=for-the-badge&logo=googleanalytics&logoColor=white)
 
-A Power BI commercial performance dashboard built on a real pharmaceutical sales dataset (Poland & Germany, 2017–2020, 254K transactions), designed to give sales leadership and territory managers a clear, actionable view of what's happening in the field.
+A Power BI commercial performance dashboard built on a simulated pharmaceutical sales dataset (Poland & Germany, 2017–2020, 254K transactions), designed to give sales leadership and territory managers a clear, actionable view of what's happening in the field.
 
 **What it answers:**
 - Where are sales growing and where are they declining: by country, territory, and product class?
