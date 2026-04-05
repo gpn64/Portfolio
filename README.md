@@ -72,6 +72,8 @@ A Power BI commercial performance dashboard built on a real pharmaceutical sales
 
 📁 [View full project README](https://github.com/gpn64/Cortonis-Pharma-Sales-Dashboard)
 
+![Executive_Overview](screenshots/Executive_Overview.png)
+
 ---
 
 ### 2. 🔬 Cortonis Pharma Sales Advanced Analytics — Segmentation & Forecast
