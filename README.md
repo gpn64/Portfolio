@@ -1,4 +1,4 @@
-# Guillaume Pien — Data & Analytics Portfolio
+# Guillaume Pien - Data & Analytics Portfolio
 
 **Data Analytics · Business Intelligence · Automation · AI**  
 📍 Greater Ottawa Metropolitan Area · 📬 **guillaume.pien@outlook.com** · [LinkedIn](https://www.linkedin.com/in/gpn)
@@ -35,7 +35,7 @@ an AI-powered automation pipeline.
 What drives my work is a strong belief that analytics tools are only as good
 as the experience of using them. I invest in UX: report layout,
 navigation flow, the right level of detail at the right level of the
-organisation — because a dashboard that people actually open every morning
+organisation - because a dashboard that people actually open every morning
 is worth ten technically perfect reports that nobody reads. Good data products
 earn their place in someone's workflow; they don't need to be explained.
 
@@ -43,32 +43,38 @@ earn their place in someone's workflow; they don't need to be explained.
 
 ## Projects
 
-### 1. 💊 Cortonis Pharma Sales Performance Dashboard
+### 1. 💊 Cortonis Pharma - Sales Performance Dashboard
 
 ![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
 ![DAX](https://img.shields.io/badge/DAX-4A4A4A?style=for-the-badge&logo=microsoftexcel&logoColor=white)
 ![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)
 ![Data Visualization](https://img.shields.io/badge/Data%20Visualization-E84393?style=for-the-badge&logo=googleanalytics&logoColor=white)
 
-A Power BI commercial performance dashboard built on a simulated pharmaceutical sales dataset (Poland & Germany, 2017–2020, 254K transactions), designed to give sales leadership and territory managers a clear, actionable view of what's happening in the field.
+A 5-page Power BI commercial performance dashboard built on a real pharmaceutical sales dataset (Foresight, Poland & Germany, 2017–2020, 254K transactions) - designed to give sales leadership and territory managers a clear, actionable view of what's happening in the field.
 
 **What it answers:**
-- Where are sales growing and where are they declining: by country, territory, and product class?
-- Which channel and sub-channel (Hospital vs. Pharmacy, Private vs. Retail vs. Institution vs. Government) drives the most value, and is that mix shifting?
-- Which sales reps and teams are outperforming and which are lagging behind their peers?
-- How is the product mix evolving across therapeutic classes (Antibiotics, Analgesics, Mood Stabilizers, Antiseptics, Antipyretics, Antimalarial)?
+- Where are sales growing and where are they declining - by country, territory, and product class?
+- Which channel and sub-channel drives the most value, and is that mix shifting?
+- Which reps and teams truly outperform - in their team context and company-wide?
+- How does the product mix evolve across therapeutic classes, and which classes are seasonal?
 
-**Dashboard structure — 5 pages:**
+**Dashboard structure - 5 pages:**
 
 | Page | Focus |
 |------|-------|
-| **Executive Overview** | Global KPIs: total sales, volume, price/unit, YoY growth by country and year |
-| **Territory Performance** | City-level map, territory ranking, Poland vs. Germany comparison |
-| **Product Mix** | Sales by therapeutic class and product, mix evolution over time |
-| **Channel Analysis** | Hospital vs. Pharmacy breakdown, sub-channel contribution |
-| **Rep & Team Performance** | Individual and team ranking vs. average, performance distribution |
+| **🔎 Executive Overview** | 5 KPI cards with absolute + % YoY variance, current vs. last year trend line, dual field parameter matrix (metric × dimension) |
+| **🌍 Territory Performance** | Germany vs. Poland cards, bubble map, BCG quadrant scatter with dynamic DAX median lines |
+| **💊 Product Mix** | Ribbon chart by therapeutic class, distribution matrix, seasonality small multiples with 95% CI |
+| **👤 Channel & Customer Analysis** | Hospital vs. Pharmacy cards, Channel × Product Class heatmap, decomposition tree |
+| **🥇 Sales Rep & Team Performance** | 4 team cards, dual ranking matrix (team rank + global rank, vs team avg + vs global avg) |
 
-**Design approach:** Wireframed in Figma before development: report layout, navigation flow, and level of detail were defined upfront to ensure the dashboard serves field users as much as leadership. Every page answers one question; no page tries to answer all of them.
+**What makes it technically strong:**
+- **Dual field parameters** on every page - metric and dimension switchable independently, a single selection drives all visuals simultaneously
+- **BCG quadrant scatter** with dynamic median lines recalculated via DAX `MEDIANX` on every filter change
+- **Seasonality index** with 95% confidence intervals computed via `STDEVX.P` - normalized so all 6 therapeutic classes are comparable regardless of absolute volume
+- **Dual rep ranking** - team rank + global rank, each with a % delta vs. their respective average, using `ISINSCOPE`, `CALCULATETABLE` + `ADDCOLUMNS`, and `ALL(Dim_Sales_Team)` to correctly isolate filter contexts
+
+**Design approach:** Every page wireframed in Figma before development - one question per page, one audience per page. Consumer-app-level UX to drive adoption: personalized greeting via `USERPRINCIPALNAME()`, custom navigation, cross-dimension search bar, synchronized slicers with Clear All bookmark.
 
 📁 [View full project README](https://github.com/gpn64/Cortonis-Pharma-Sales-Dashboard)
 
@@ -76,7 +82,7 @@ A Power BI commercial performance dashboard built on a simulated pharmaceutical 
 
 ---
 
-### 2. 🔬 Cortonis Pharma Sales Advanced Analytics — Segmentation & Forecast
+### 2. 🔬 Cortonis Pharma Sales Advanced Analytics - Segmentation & Forecast
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
@@ -85,12 +91,12 @@ A Power BI commercial performance dashboard built on a simulated pharmaceutical 
 ![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)
 ![Kaggle](https://img.shields.io/badge/Kaggle-20BEFF?style=for-the-badge&logo=kaggle&logoColor=white)
 
-A Python-based analytics layer built on top of the same pharma sales dataset — going beyond what standard BI reporting can answer. Three analytical modules, each producing outputs that feed back into Power BI for decision-making.
+A Python-based analytics layer built on top of the same pharma sales dataset - going beyond what standard BI reporting can answer. Three analytical modules, each producing outputs that feed back into Power BI for decision-making.
 
-**This project is a deliberate extension of Project 1** — it answers the questions that arise once you have a solid reporting foundation in place: not just *what* is happening, but *why*, *who*, and *what next*.
+**This project is a deliberate extension of Project 1** - it answers the questions that arise once you have a solid reporting foundation in place: not just *what* is happening, but *why*, *who*, and *what next*.
 
 **Module 1: Customer Segmentation**
-RFM analysis (Recency, Frequency, Monetary) combined with K-Means clustering to group customers into behaviorally distinct segments. Each segment is profiled by channel, sub-channel, and preferred product class — producing actionable inputs for differentiated commercial strategies (key account management, frequency of visits, product focus by customer type).
+RFM analysis (Recency, Frequency, Monetary) combined with K-Means clustering to group customers into behaviorally distinct segments. Each segment is profiled by channel, sub-channel, and preferred product class - producing actionable inputs for differentiated commercial strategies (key account management, frequency of visits, product focus by customer type).
 
 **Module 2: Territory Underperformance Analysis**
 Separates *performance* from *potential* at the territory level identifying whether a city underperforms because it is poorly covered or because market demand is structurally lower. Outputs a performance vs. potential scatter plot and a choropleth map that makes underserved opportunities immediately visible.
@@ -104,7 +110,7 @@ Time-series forecast by therapeutic class using Prophet: monthly point estimates
 
 ---
 
-### 3. 🏅 True Olympic Powerhouse — Sanofi-Wide Analytics Competition
+### 3. 🏅 True Olympic Powerhouse - Sanofi-Wide Analytics Competition
 
 ![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
 ![DAX](https://img.shields.io/badge/DAX-4A4A4A?style=for-the-badge&logo=microsoftexcel&logoColor=white)
@@ -124,7 +130,7 @@ A Power BI dashboard exploring 120 years of Olympic history built for a company-
 - Composite scoring on the Results page uses rank-based normalization so metrics with different scales (medal counts vs. number of Games organized) contribute proportionally
 - SVG flags rendered inline, personalized greetings via `USERPRINCIPALNAME()`, interactive sport icon grid as a slicer
 
-**What makes it stand out as a product:** The dashboard is structured as a guided narrative — each of the 4 analytical sections (Medal & Performance, Organizations & Participations, Sports & Athletes, Final Results) builds toward a conclusion the user reaches themselves. The answer to "who wins the Olympics" is genuinely theirs to decide.
+**What makes it stand out as a product:** The dashboard is structured as a guided narrative - each of the 4 analytical sections (Medal & Performance, Organizations & Participations, Sports & Athletes, Final Results) builds toward a conclusion the user reaches themselves. The answer to "who wins the Olympics" is genuinely theirs to decide.
 
 ![TOP Dashboard](./screenshots/TOP.gif)
 
@@ -132,7 +138,7 @@ A Power BI dashboard exploring 120 years of Olympic history built for a company-
 
 ---
 
-### 4. 🏥 Healthcare AutoClaims — AI-Powered Receipt Tracker
+### 4. 🏥 Healthcare AutoClaims - AI-Powered Receipt Tracker
 
 ![Gmail](https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white)
 ![Zapier](https://img.shields.io/badge/Zapier-FF4A00?style=for-the-badge&logo=zapier&logoColor=white)
@@ -155,7 +161,7 @@ A fully automated pipeline that watches a Gmail inbox for healthcare receipts, e
 
 ---
 
-### 5. 📈 TFSA TSX Momentum Screener — Quarterly Rebalancing Tool
+### 5. 📈 TFSA TSX Momentum Screener - Quarterly Rebalancing Tool
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
@@ -178,7 +184,7 @@ A Python screener that generates a quarterly TSX rebalancing recommendation for 
 
 ---
 
-### 6. 📊 Dashboard — Data Quality Monitoring at Scale
+### 6. 📊 Dashboard - Data Quality Monitoring at Scale
 
 ![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
 ![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white)
@@ -214,7 +220,7 @@ Beyond the technical work, I operate as a full-cycle analytics project owner. Wh
 
 **Deployment & adoption**: managing rollout, training, and documentation; setting up governance for ongoing data quality and report maintenance; tracking post-launch adoption to close the loop on whether the solution is actually being used.
 
-This end-to-end ownership — not just the code, but the process around it — is what turns analytics deliverables into decisions.
+This end-to-end ownership - not just the code, but the process around it - is what turns analytics deliverables into decisions.
 
 ---
 
